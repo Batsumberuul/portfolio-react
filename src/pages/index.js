@@ -1,17 +1,16 @@
 import Image from "next/image";
-import {Inter} from "next/font/google";
+import { Inter } from "next/font/google";
 import HeadPhone from "../components/Head";
 import TomPicture from "@/components/pictures/Tom";
 import Text from "../components/text/text";
 import Action from "../components/Action";
 import Links from "../components/Links";
-import Button from "../components/buttons/Button";
+
 import AboutMePages from "./aboutPages";
 import SkillsPages from "./skills";
+import Experience from "./experience";
 
-import AboutMeImg from "../components/pictures/AboutMeImg";
-
-const inter = Inter({subsets: ["latin"]});
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -32,6 +31,9 @@ export default function Home() {
       </div>
       <div>
         <SkillsPages />
+      </div>
+      <div>
+        <Experience />
       </div>
     </div>
   );

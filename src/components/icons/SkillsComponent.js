@@ -1,9 +1,11 @@
 const SkillsComponent = (props) => {
-  const {icon, icontext} = props;
+  const { icon, icontext } = props;
   return (
-    <div className="">
+    <div className="w-fit grid place-self-center">
       <svg className="w-16 h-16 ">{icon}</svg>
-      <p className="text-gray-600 font-normal text-base ">{icontext}</p>
+      <p className="text-gray-600 font-normal text-base  pt-2 w-fit text-center">
+        {icontext}
+      </p>
     </div>
   );
 };
