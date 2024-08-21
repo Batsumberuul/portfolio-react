@@ -86,9 +86,10 @@ let iconDatas = [
 
 const SkillsPages = () => {
   return (
-    <div>
+    <div className="px-4 py-16">
       <Button text="Skills" />
-      <SkillsText />
+
+      <SkillsText text="The skills, tools and technologies I am really good at:" />
       <div className="grid grid-cols-3 pt-2 ">
         {iconDatas.map((icondata) => {
           return (

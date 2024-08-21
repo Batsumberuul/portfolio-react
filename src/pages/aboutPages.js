@@ -19,7 +19,7 @@ let aboutListDatas = [
 
 const AboutMePages = () => {
   return (
-    <div className="flex flex-col gap-4 bg-gray-50">
+    <div className="flex flex-col gap-4 bg-gray-50 px-4 py-16">
       <Button text="About me" />
 
       <AboutMeImg />

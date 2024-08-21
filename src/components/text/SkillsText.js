@@ -1,7 +1,7 @@
-const SkillsText = () => {
+const SkillsText = (props) => {
   return (
     <p className="text-gray-600 font-normal text-lg text-center">
-      The skills, tools and technologies I am really good at:
+      {props.text}
     </p>
   );
 };
