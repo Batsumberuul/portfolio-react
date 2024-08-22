@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import {Inter} from "next/font/google";
 import HeadPhone from "../components/Head";
 import TomPicture from "@/components/pictures/Tom";
 import Text from "../components/text/text";
@@ -8,6 +8,7 @@ import Links from "../components/Links";
 import Button from "../components/buttons/Button";
 import SkillsText from "../components/text/SkillsText";
 import GetInTouch from "../components/new/GetInTouch";
+import HeadDesktop from "../components/HeadDesktop";
 
 import AboutMePages from "./aboutPages";
 import SkillsPages from "./skills";
@@ -16,30 +17,30 @@ import WorkPages from "./work";
 import Links2 from "../components/Links2";
 import CopyRight from "../components/icons/CopyRight";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({subsets: ["latin"]});
 
 export default function Home() {
   return (
-    <div className="container mx-auto border-2">
-      <HeadPhone />
-
+    <div className="container mx-auto border-2 ">
+      <div className=" md:hidden">
+        <HeadPhone />
+      </div>
+      <div className="hidden md:block">
+        <HeadDesktop />
+      </div>
       <div className=" flex flex-col justify-between gap-12 px-4 py-16">
-        <div className="">
-          <div className="flex justify-center">
+        <div className="md:flex md:flex-row-reverse ">
+          <div className="flex justify-center md:flex-1 md:justify-end">
             <TomPicture />
           </div>
-          <div className="flex flex-col gap-12">
+          <div className="flex flex-col gap-12 md:flex-1">
             <Text />
 
             <Action />
             <Links />
           </div>
-          {/* <div className="">
-            <TomPicture />
-          </div> */}
         </div>
       </div>
-
       <div className=" bg-gray-50">
         <AboutMePages />
       </div>
@@ -63,8 +64,10 @@ export default function Home() {
           <Links2 />
         </div>
       </div>
-      <div className="flex justify-center gap-2 ">
-        <CopyRight />
+      <div className="flex justify-center gap-2 bg-gray-50 py-6 px-20">
+        <div className="flex items-center">
+          <CopyRight />
+        </div>
 
         <p className="text-gray-600 font-normal text-sm text-center">
           2024 | Greetings with ❤️️ from Ulaanbaatar

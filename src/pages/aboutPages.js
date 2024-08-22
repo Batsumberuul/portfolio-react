@@ -19,23 +19,40 @@ let aboutListDatas = [
 
 const AboutMePages = () => {
   return (
-    <div className="flex flex-col gap-4 bg-gray-50 px-4 py-16">
+    <div className="flex flex-col gap-4 bg-gray-50 px-4 py-16 md:px-8 md:py-0">
       <Button text="About me" />
-
-      <AboutMeImg />
-      <p className="text-gray-900 font-semibold text-2xl">
-        Curious about me? Here you have it:
-      </p>
-      {aboutMeDatas.map((data, index) => {
-        return <AboutMeTextComponent key={index} text={data} />;
-      })}
-      {aboutListDatas.map((listdata, index) => {
-        return <AboutMeList key={index} textList={listdata} />;
-      })}
-      <p className="text-gray-600 font-normal text-base">
-        One last thing, I'm available for freelance work, so feel free to reach
-        out and say hello! I promise I don't bite 😉{" "}
-      </p>
+      <div className="md:flex">
+        <div className="md:flex-1 md:flex md:justify-start md:items-center md:max-w-lg">
+          <AboutMeImg />
+        </div>
+        <div className="md:flex-1">
+          <p className="text-gray-900 font-semibold text-2xl">
+            Curious about me? Here you have it:
+          </p>
+          <div className="flex flex-col gap-6 pt-6">
+            {aboutMeDatas.map((data, index) => {
+              return (
+                <AboutMeTextComponent
+                  key={index}
+                  text={data}
+                />
+              );
+            })}
+          </div>
+          {aboutListDatas.map((listdata, index) => {
+            return (
+              <AboutMeList
+                key={index}
+                textList={listdata}
+              />
+            );
+          })}
+          <p className="text-gray-600 font-normal text-base  pt-6">
+            One last thing, I'm available for freelance work, so feel free to
+            reach out and say hello! I promise I don't bite 😉{" "}
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

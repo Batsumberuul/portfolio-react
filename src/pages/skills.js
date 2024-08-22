@@ -90,7 +90,7 @@ const SkillsPages = () => {
       <Button text="Skills" />
 
       <SkillsText text="The skills, tools and technologies I am really good at:" />
-      <div className="grid grid-cols-3 pt-2 ">
+      <div className="grid grid-cols-3 pt-2 md:grid-cols-8">
         {iconDatas.map((icondata) => {
           return (
             <SkillsComponent
