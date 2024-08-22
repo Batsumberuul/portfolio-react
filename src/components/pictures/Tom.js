@@ -1,8 +1,8 @@
 const TomPicture = () => {
   return (
     <img
-      className="border-8 border-gray-50 flex justify-center items-center"
-      src="/Tom.png"
+      className="border-8 border-gray-50 "
+      src="/PicContainer.png"
       width={240}
       height={280}
     />

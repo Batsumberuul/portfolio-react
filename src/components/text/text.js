@@ -1,6 +1,6 @@
 const Text = () => {
   return (
-    <div className="flex flex-col gap-2 w-80 mx-5 justify-center">
+    <div className="flex flex-col gap-2 mx-5 justify-center">
       <p className="text-gray-900 font-semibold text-4xl"> Hi, I’m Tom 👋</p>
       <p className="text-gray-600 font-normal text-base">
         I specialize in full stack development, particularly with React.js and

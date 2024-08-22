@@ -27,20 +27,10 @@ const AboutMePages = () => {
         Curious about me? Here you have it:
       </p>
       {aboutMeDatas.map((data, index) => {
-        return (
-          <AboutMeTextComponent
-            key={index}
-            text={data}
-          />
-        );
+        return <AboutMeTextComponent key={index} text={data} />;
       })}
       {aboutListDatas.map((listdata, index) => {
-        return (
-          <AboutMeList
-            key={index}
-            textList={listdata}
-          />
-        );
+        return <AboutMeList key={index} textList={listdata} />;
       })}
       <p className="text-gray-600 font-normal text-base">
         One last thing, I'm available for freelance work, so feel free to reach

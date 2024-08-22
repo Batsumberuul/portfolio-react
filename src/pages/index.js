@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {Inter} from "next/font/google";
+import { Inter } from "next/font/google";
 import HeadPhone from "../components/Head";
 import TomPicture from "@/components/pictures/Tom";
 import Text from "../components/text/text";
@@ -16,23 +16,31 @@ import WorkPages from "./work";
 import Links2 from "../components/Links2";
 import CopyRight from "../components/icons/CopyRight";
 
-const inter = Inter({subsets: ["latin"]});
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="w-96 border-2 ">
+    <div className="container mx-auto border-2">
       <HeadPhone />
 
       <div className=" flex flex-col justify-between gap-12 px-4 py-16">
-        <div className="w-96 flex justify-center">
-          <TomPicture />
+        <div className="">
+          <div className="flex justify-center">
+            <TomPicture />
+          </div>
+          <div className="flex flex-col gap-12">
+            <Text />
+
+            <Action />
+            <Links />
+          </div>
+          {/* <div className="">
+            <TomPicture />
+          </div> */}
         </div>
-        <Text />
-        <Action />
-        <Links />
       </div>
 
-      <div className="w-96 bg-gray-50 ">
+      <div className=" bg-gray-50">
         <AboutMePages />
       </div>
       <div>

@@ -51,17 +51,17 @@ let workButtonDatas = [
 
 const WorkPages = () => {
   return (
-    <div className=" px-4 py-16 ">
+    <div className="px-4 py-16">
       <div className="flex flex-col gap-6">
         <div className=" flex flex-col gap-4">
           <Button text="Work" />
           <SkillsText text="Some of the noteworthy projects I have built:" />
         </div>
-        <div className="border-2 rounded-xl">
-          <div className="p-8 bg-gray-50">
+        <div className="border-2 rounded-xl md:flex">
+          <div className="p-8 bg-gray-50 flex justify-center md:flex-1">
             <WorkImg src="/ubcub.png" />
           </div>
-          <div className=" flex flex-col gap-6 p-8">
+          <div className=" flex flex-col gap-6 p-8 md:flex-1">
             <WorkTittle tittle="UBCab" />
             <WorkText text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae." />
             <div className="grid grid-cols-2 gap-2 w-fit">
@@ -78,11 +78,11 @@ const WorkPages = () => {
           </div>
         </div>
 
-        <div className="border-2 rounded-xl">
-          <div className="p-8 bg-gray-50">
+        <div className="border-2 rounded-xl md:flex md:flex-row-reverse">
+          <div className=" p-8 bg-gray-50 flex justify-center items-center md:flex-1">
             <WorkImg src="/mentorhub.png" />
           </div>
-          <div className=" flex flex-col gap-6 p-8">
+          <div className=" flex flex-col gap-6 p-8 md:flex-1">
             <WorkTittle tittle="Mentorhub" />
             <WorkText text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae." />
             <div className="grid grid-cols-2 gap-2 w-fit">
@@ -98,11 +98,12 @@ const WorkPages = () => {
             <WorkIcon />
           </div>
         </div>
-        <div className="border-2 rounded-xl">
-          <div className="p-8 bg-gray-50">
+
+        <div className="border-2 rounded-xl md:flex">
+          <div className="p-8 bg-gray-50 flex justify-center md:flex-1 ">
             <WorkImg src="/itom.png" />
           </div>
-          <div className=" flex flex-col gap-6 p-8">
+          <div className="flex flex-col gap-6 p-8 md:flex-1">
             <WorkTittle tittle="iToim" />
             <WorkText text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae." />
 
