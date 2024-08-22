@@ -1,5 +1,5 @@
 const UpworkList = (props) => {
   const { listtext } = props;
-  return <li>{listtext}</li>;
+  return <li className="w-96">{listtext}</li>;
 };
 export default UpworkList;

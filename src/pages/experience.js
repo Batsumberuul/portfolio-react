@@ -31,14 +31,24 @@ const Experience = () => {
         {" "}
         Here is a quick summary of my most recent experiences:
       </p> */}
-      <div className="flex flex-col gap-4 border-2 rounded-xl bg-gray-50 p-8">
-        <UpworkImg />
-        <UpworkDate text="Nov 2021 - Present" />
+      <div className="flex flex-col gap-4 border-2 rounded-xl bg-gray-50 p-8 md:flex md:flex-row md:gap-20 md:justify-between">
         <div>
-          <UpworkJobs text="Sr. Frontend Developer" />
-          {developerDatas.map((developerData) => {
-            return <UpworkList listtext={developerData} />;
-          })}
+          <UpworkImg />
+        </div>
+        <div className="flex flex-col gap-4 md:flex md:flex-row-reverse md:justify-between md:gap-20">
+          <div>
+            <UpworkDate text="Nov 2021 - Present" />
+          </div>
+          <div>
+            <div>
+              <UpworkJobs text="Sr. Frontend Developer" />
+            </div>
+            <div>
+              {developerDatas.map((developerData) => {
+                return <UpworkList listtext={developerData} />;
+              })}
+            </div>
+          </div>
         </div>
       </div>
       <div className="flex flex-col gap-4 border-2 rounded-xl bg-gray-50 p-8 md:flex md:flex-row md:gap-20 md:justify-between">
@@ -47,31 +57,37 @@ const Experience = () => {
         </div>
         <div className="flex flex-col gap-4 md:flex md:flex-row-reverse md:justify-between md:gap-20">
           <UpworkDate text="Jul 2017 - Oct 2021" />
-          <div className="flex flex-col gap-4 md:w-96">
-            <UpworkJobs text="Team Lead" />
-          </div>
           <div>
-            {teamLeadDatas.map((teamLeadData) => {
-              return <UpworkList listtext={teamLeadData} />;
-            })}
+            <div className="flex flex-col gap-4 md:w-96">
+              <UpworkJobs text="Team Lead" />
+            </div>
+            <div>
+              {teamLeadDatas.map((teamLeadData) => {
+                return <UpworkList listtext={teamLeadData} />;
+              })}
+            </div>
           </div>
         </div>
       </div>
       <div className="flex flex-col gap-4 border-2 rounded-xl bg-gray-50 p-8 md:flex md:flex-row md:gap-20 md:justify-between">
-        <div className="">
+        <div>
           <UpworkImg />
         </div>
 
         <div className=" flex flex-col gap-4 md:flex md:flex-row-reverse md:justify-between md:gap-20">
-          <div className="md:">
+          <div>
             <UpworkDate text="Dec 2015 - May 2017" />
           </div>
-          <div className=" flex flex-col gap-4 md:w-96">
-            <UpworkJobs text="Full Stack Developer" />
+          <div>
+            <div className=" flex flex-col gap-4 md:w-96">
+              <UpworkJobs text="Full Stack Developer" />
+            </div>
+            <div>
+              {fullstackdatas.map((fullstackdata) => {
+                return <UpworkList listtext={fullstackdata} />;
+              })}
+            </div>
           </div>
-          {fullstackdatas.map((fullstackdata) => {
-            return <UpworkList listtext={fullstackdata} />;
-          })}
         </div>
       </div>
     </div>
