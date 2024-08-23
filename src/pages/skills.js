@@ -86,7 +86,7 @@ let iconDatas = [
 
 const SkillsPages = () => {
   return (
-    <div className="px-4 py-16">
+    <div className="px-4 py-16 flex flex-col gap-4">
       <Button text="Skills" />
 
       <SkillsText text="The skills, tools and technologies I am really good at:" />

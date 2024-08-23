@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {Inter} from "next/font/google";
+import { Inter } from "next/font/google";
 import HeadPhone from "../components/Head";
 import TomPicture from "@/components/pictures/Tom";
 import Text from "../components/text/text";
@@ -9,19 +9,19 @@ import Button from "../components/buttons/Button";
 import SkillsText from "../components/text/SkillsText";
 import GetInTouch from "../components/new/GetInTouch";
 import HeadDesktop from "../components/HeadDesktop";
-
 import AboutMePages from "./aboutPages";
 import SkillsPages from "./skills";
 import Experience from "./experience";
 import WorkPages from "./work";
 import Links2 from "../components/Links2";
 import CopyRight from "../components/icons/CopyRight";
+import Kebabmenu from "../components/new/Kebabmenu";
 
-const inter = Inter({subsets: ["latin"]});
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="container mx-auto border-2 ">
+    <div className="container mx-auto dark:bg-black">
       <div className=" md:hidden">
         <HeadPhone />
       </div>
@@ -47,10 +47,10 @@ export default function Home() {
       <div>
         <SkillsPages />
       </div>
-      <div>
+      <div className="">
         <Experience />
       </div>
-      <div>
+      <div className="">
         <WorkPages />
       </div>
       <div className="px-4 py-16 flex flex-col gap-6">
@@ -72,6 +72,10 @@ export default function Home() {
         <p className="text-gray-600 font-normal text-sm text-center">
           2024 | Greetings with ❤️️ from Ulaanbaatar
         </p>
+      </div>
+
+      <div className="md:hidden">
+        <Kebabmenu />
       </div>
     </div>
   );

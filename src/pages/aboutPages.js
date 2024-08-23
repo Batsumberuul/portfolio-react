@@ -19,35 +19,25 @@ let aboutListDatas = [
 
 const AboutMePages = () => {
   return (
-    <div className="flex flex-col gap-4 bg-gray-50 px-4 py-16 md:px-8 md:py-0">
+    <div className="flex flex-col gap-4 bg-gray-50 px-4 py-16  md:py-24 dark:bg-gray-900 ">
       <Button text="About me" />
       <div className="md:flex">
-        <div className="md:flex-1 md:flex md:justify-start md:items-center md:max-w-lg">
+        <div className=" flex  justify-center md:flex-1 md:flex md:justify-start md:items-center md:max-w-lg">
           <AboutMeImg />
         </div>
         <div className="md:flex-1">
-          <p className="text-gray-900 font-semibold text-2xl">
+          <p className="text-gray-900 font-semibold text-2xl dark:text-gray-300">
             Curious about me? Here you have it:
           </p>
           <div className="flex flex-col gap-6 pt-6">
             {aboutMeDatas.map((data, index) => {
-              return (
-                <AboutMeTextComponent
-                  key={index}
-                  text={data}
-                />
-              );
+              return <AboutMeTextComponent key={index} text={data} />;
             })}
           </div>
           {aboutListDatas.map((listdata, index) => {
-            return (
-              <AboutMeList
-                key={index}
-                textList={listdata}
-              />
-            );
+            return <AboutMeList key={index} textList={listdata} />;
           })}
-          <p className="text-gray-600 font-normal text-base  pt-6">
+          <p className="text-gray-600 font-normal text-base  pt-6 dark:text-gray-300">
             One last thing, I'm available for freelance work, so feel free to
             reach out and say hello! I promise I don't bite 😉{" "}
           </p>

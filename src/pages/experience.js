@@ -24,14 +24,14 @@ let fullstackdatas = [
 ];
 const Experience = () => {
   return (
-    <div className="bg-gray-100 px-4 py-16 flex flex-col gap-6 items-center">
+    <div className="bg-gray-100 px-4 py-16 flex flex-col gap-6 items-center dark:bg-gray-900">
       <Button text="Experience" />
       <SkillsText text="Here is a quick summary of my most recent experiences:" />
       {/* <p className="font-normal text-base text-gray-600 text-center m-2">
         {" "}
         Here is a quick summary of my most recent experiences:
       </p> */}
-      <div className="flex flex-col gap-4 border-2 rounded-xl bg-gray-50 p-8 md:flex md:flex-row md:gap-20 md:justify-between">
+      <div className="flex flex-col gap-4 border-2 rounded-xl bg-gray-50 p-8 md:flex md:flex-row md:gap-20 md:justify-between dark:bg-gray-800 dark:border-gray-800">
         <div>
           <UpworkImg />
         </div>
@@ -44,14 +44,14 @@ const Experience = () => {
               <UpworkJobs text="Sr. Frontend Developer" />
             </div>
             <div>
-              {developerDatas.map((developerData) => {
-                return <UpworkList listtext={developerData} />;
+              {developerDatas.map((developerData, index) => {
+                return <UpworkList key={index} listtext={developerData} />;
               })}
             </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-4 border-2 rounded-xl bg-gray-50 p-8 md:flex md:flex-row md:gap-20 md:justify-between">
+      <div className="flex flex-col gap-4 border-2 rounded-xl bg-gray-50 p-8 md:flex md:flex-row md:gap-20 md:justify-between dark:bg-gray-800 dark:border-gray-800">
         <div>
           <UpworkImg />
         </div>
@@ -61,15 +61,15 @@ const Experience = () => {
             <div className="flex flex-col gap-4 md:w-96">
               <UpworkJobs text="Team Lead" />
             </div>
-            <div>
-              {teamLeadDatas.map((teamLeadData) => {
-                return <UpworkList listtext={teamLeadData} />;
+            <div className="">
+              {teamLeadDatas.map((teamLeadData, index) => {
+                return <UpworkList key={index} listtext={teamLeadData} />;
               })}
             </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-4 border-2 rounded-xl bg-gray-50 p-8 md:flex md:flex-row md:gap-20 md:justify-between">
+      <div className="flex flex-col gap-4 border-2 rounded-xl bg-gray-50 p-8 md:flex md:flex-row md:gap-20 md:justify-between dark:bg-gray-800 dark:border-gray-800">
         <div>
           <UpworkImg />
         </div>
@@ -83,8 +83,8 @@ const Experience = () => {
               <UpworkJobs text="Full Stack Developer" />
             </div>
             <div>
-              {fullstackdatas.map((fullstackdata) => {
-                return <UpworkList listtext={fullstackdata} />;
+              {fullstackdatas.map((fullstackdata, index) => {
+                return <UpworkList key={index} listtext={fullstackdata} />;
               })}
             </div>
           </div>

@@ -1,28 +1,21 @@
-const Menu24 = () => {
+const KebabIcon = () => {
   return (
     <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
+      width="36"
+      height="36"
+      viewBox="0 0 36 36"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M4 12H20"
+        d="M24 12L12 24"
         stroke="#4B5563"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M4 6H20"
-        stroke="#4B5563"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M4 18H20"
+        d="M12 12L24 24"
         stroke="#4B5563"
         strokeWidth="2"
         strokeLinecap="round"
@@ -31,4 +24,4 @@ const Menu24 = () => {
     </svg>
   );
 };
-export default Menu24;
+export default KebabIcon;

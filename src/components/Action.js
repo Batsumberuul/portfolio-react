@@ -6,7 +6,7 @@ const Action = () => {
     <div className="flex flex-col gap-2 mx-5">
       <div className="flex justify-start gap-5">
         <LocationIcon24 />
-        <p className="text-gray-600 font-normal text-base">
+        <p className="text-gray-600 font-normal text-base dark:text-gray-300">
           Ulaanbaatar, Mongolia
         </p>
       </div>
@@ -15,7 +15,7 @@ const Action = () => {
         <div className="w-6 h-6 flex justify-center items-center">
           <DotEmerald500 />
         </div>
-        <p className="text-gray-600 font-normal text-base">
+        <p className="text-gray-600 font-normal text-base dark:text-gray-300">
           Available for new projects
         </p>
       </div>

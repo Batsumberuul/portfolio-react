@@ -7,7 +7,7 @@ const NextIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_327_496)">
+      <g clipPath="url(#clip0_327_496)">
         <mask
           id="mask0_327_496"
           style="mask-type:alpha"
@@ -27,7 +27,7 @@ const NextIcon = () => {
             d="M32 62.9333C49.084 62.9333 62.9333 49.084 62.9333 32C62.9333 14.916 49.084 1.06665 32 1.06665C14.916 1.06665 1.06665 14.916 1.06665 32C1.06665 49.084 14.916 62.9333 32 62.9333Z"
             fill="black"
             stroke="white"
-            stroke-width="6"
+            strokeWidth="6"
           />
           <path
             d="M53.1584 56.0071L24.5838 19.2H19.2V44.7893H23.507V24.6697L49.7774 58.6115C50.9628 57.8183 52.092 56.9475 53.1584 56.0071Z"
